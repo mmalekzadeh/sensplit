@@ -13,7 +13,7 @@ class DataFrameSplitter:
         elif self.method == "ratio":
             train_ratio = options.get('train_ratio', None)
         else:
-            raise ValueError("You must define the method of splitting: 'trial' or 'ratio'")
+            raise ValueError("You must define the method of splitting: 'trials' or 'ratio'")
 
         columns = dataset.columns
         train_data = pd.DataFrame(columns=columns)
