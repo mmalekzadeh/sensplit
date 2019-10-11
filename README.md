@@ -7,7 +7,7 @@ Install SenSplit from PyPI (recommended):
 ```sh
 pip install sensplit
 ```
-- **Alternatively: install Keras from the GitHub source:**
+- **Alternatively: install SenSplit from the GitHub source:**
 
 First, clone SenSplit using `git`:
 
