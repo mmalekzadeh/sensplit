@@ -358,8 +358,8 @@ sorted(dataset['trial'].unique())
 
 
 
-> Here, I want data of each user (`id`) to be splitted into train (`trial<10.`) and test ('trial>10.`).
-So, I choose `labels = `("id","trial")`. The order matters!
+> Here, I want data of each user (`id`) to be splitted into train (`trial<10.`) and test (`trial>10.`).
+So, I choose `labels = ("id","trial")`. The order matters!
 
 ### Main Part
 
