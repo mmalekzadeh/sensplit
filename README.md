@@ -2,6 +2,10 @@
 This python package helps to splits a sensor dataset (in Pandas DataFrame format) into train and test sets.
 
 -----------------------------------------
+## Homepage:
+https://github.com/mmalekzadeh/sensplit
+
+-----------------------------------------
 ## Installation 
 Install SenSplit from PyPI (recommended):
 ```sh
@@ -20,3 +24,4 @@ git clone https://github.com/mmalekzadeh/sensplit
 cd sensplit
 python setup.py install
 ```
+-----------------------------------------

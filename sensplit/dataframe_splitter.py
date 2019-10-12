@@ -6,7 +6,7 @@ class DataFrameSplitter:
     def __init__(self, method="ratio"):
         self.method = method
 
-    def train_test_spilt(self, dataset, labels, verbose=0, **options):
+    def train_test_split(self, dataset, labels, verbose=0, **options):
         if self.method == "trials":
             train_trials = options.get('train_trials', None)
             trial_col = options.get('trial_col', None)

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sensplit",
-    version="0.0.2",
+    version="0.0.4",
     author="Mohammad Malekzadeh",
     author_email="moh.malekzadeh@gmail.com",
     description="Splits a dataset (in Pandas dataframe format) to train/test sets.",

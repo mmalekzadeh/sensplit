@@ -65,11 +65,11 @@ class DataFrameSplitterTest(unittest.TestCase):
         Test 'trials' setting.
         """
         df_splitter = dataframe_splitter.DataFrameSplitter(method="trials")
-        train_data, test_data = df_splitter.train_test_spilt(self.dataset, 
-                                                            ["E", "F"],  
-                                                            trial_col="F", 
-                                                            train_trials=[12,19],
-                                                            verbose=0)
+        train_data, test_data = df_splitter.train_test_split(self.dataset,
+                                                             ["E", "F"],
+                                                             trial_col="F",
+                                                             train_trials=[12,19],
+                                                             verbose=0)
         train_data.reset_index(drop=True, inplace=True) 
         test_data.reset_index(drop=True, inplace=True)                                                                                                  
         assert_frame_equal(train_data, self.trial_train_data, check_dtype=False)
@@ -82,10 +82,10 @@ class DataFrameSplitterTest(unittest.TestCase):
         """
         """
         df_splitter = dataframe_splitter.DataFrameSplitter(method="ratio")
-        train_data, test_data = df_splitter.train_test_spilt(self.dataset, 
-                                                            ["E", "F"],  
-                                                            train_ratio=.80, 
-                                                            verbose=0)
+        train_data, test_data = df_splitter.train_test_split(self.dataset,
+                                                             ["E", "F"],
+                                                             train_ratio=.80,
+                                                             verbose=0)
         train_data.reset_index(drop=True, inplace=True) 
         test_data.reset_index(drop=True, inplace=True)                                                                                                  
         assert_frame_equal(train_data, self.ratio_train_data, check_dtype=False)
